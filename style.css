@@ -5,6 +5,19 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.date {
+	font-size: 10px;
+	color: #e4d5af;
+}
+.desc {
+	font-size: 22px;
+}
+.img{
+	margin: 0px;
+	height: 60%;
+	width:60%;
+
+}
 .footer {
 	position: fixed;
 	bottom: 0px;
@@ -240,7 +253,7 @@ strong {
 	text-align: center;
 	flex-wrap: wrap;
 }
-img {
+.imgs {
 	height: 60px;
 	width: 60px;
 	position: relative;
@@ -316,9 +329,13 @@ input:hover {
 	height: 40%;
 	width: 100%;
 	margin: 1px;
-	background-color: #01010087;;
+	background-color: #010100e3;
 	/*background-color: #ce00047a;*/
 	/*margin-top: 3%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	border-right: 2px solid #e4d5af;
 	border-bottom: 2px solid #e4d5af;
 }
@@ -330,7 +347,15 @@ input:hover {
 @media (min-width: 490px) and (max-width: 650px) {
 
 
-
+	.desc {
+		font-size: 22px;
+	}
+	.img{
+		margin: 0px;
+		height: 70%;
+		width:70%;
+	
+	}
 .header-layout {
 	height: 100vh;
 	width: 100%;
@@ -356,6 +381,10 @@ input:hover {
 	height: 40%;
 	width: 99%;
 	margin: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	border-right: 2px solid #e4d5af;
 	border-bottom: 2px solid #e4d5af;
 }
@@ -437,6 +466,15 @@ input, button {
 
 @media (min-width: 375px) and (max-width: 489px) {
 
+	.desc {
+		font-size: 17px;
+	}
+	.img{
+		margin: 0px;
+		height: 80%;
+		width:80%;
+	
+	}
 .absulute-button-2 {
 	/*width: 2%;*/
 	height: 18vh;
@@ -553,6 +591,10 @@ input, button {
 	height: 99%;
 	width: 100%;	
 	margin: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	border-right: 2px solid #e4d5af;
 	border-bottom: 2px solid #e4d5af;
 }
@@ -592,7 +634,18 @@ input, button {
 
 
 @media (min-width: 220px) and (max-width: 374px) {
+	.desc {
+		font-size: 15px;
+	}
+	.img{
+		margin: 0px;
+		height: 80%;
+		width:100%;
 	
+	}
+	h2 {
+		font-size; 10px;
+	}
 .absulute-button-2 {
 	/*width: 2%;*/
 	height: 18vh;
@@ -707,6 +760,10 @@ input, button {
 	height: 99%;
 	width: 100%;	
 	margin: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	border-right: 2px solid #e4d5af;
 	border-bottom: 2px solid #e4d5af;
 }

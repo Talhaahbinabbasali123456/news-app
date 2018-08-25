@@ -1,8 +1,5 @@
 function call() {
 
-// let background = ["images/1.jpg"];
-// let random = parseInt(Math.random()*1);
-// 	document.querySelector(".logo-div").style["background-image"] = `url(${background[random]})`;
 
 let backgroundT = ["images/4.jpg", "images/news.png", "images/Fre.jpg"];
 let randomT = parseInt(Math.random()*3);
@@ -14,19 +11,36 @@ let randoms = parseInt(Math.random()*3);
 
 }
 setInterval(call,3000);
+
+
+
+
+
+
+
+
 let catogoriesName = ["Top Headlines", "Politics", "Sports", "Showbiz", "Weather", "Animal planet", "Technology", "Internet", "Cooking", "Fitness"];
 
 
 function inicialize() {
-	for (let i=0; i<10; i++) {
+$.ajax({
+	url : "https://newsapi.org/v2/top-headlines?sources=football-italia&apiKey=8c8793ffe9c046b6a6c2b3f7313f5e3a",
+	success: function(data){
+		console.log(data)
 
-	document.querySelector(".article-content").innerHTML += `<div class='catagories'>${catogoriesName[i]}</div>`
+	for(let i=0; i<8; i++){
+	document.querySelector(".article-content-2").innerHTML += `<div class='news'>
+	<img  class="img" src="${data.articles[i].urlToImage}">
+	<h1 class='desc'>${data.articles[i].description}<span class='date'>${data.articles[i].publishedAt}</span></h1>
 	
-	}
-	for (let i=0; i<20; i++) {
-
-	document.querySelector(".article-content-2").innerHTML += `<div class='news'></div>`
+	<br>
 	
+	</div>`
 	}
-
+}
+ })
+ for(let i=0; i<8; i++){
+	// console.log("lanti")
+document.querySelector(".article-content").innerHTML += `<div class='catagories'>${catogoriesName[i]}</div>`
+}
 }
