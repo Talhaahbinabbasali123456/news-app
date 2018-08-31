@@ -4,40 +4,70 @@
 	<title>News App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script type="text/javascript" src="script.js"></script>
 </head>
-<body onload="create()">
-	<header class="main-haader">
-			<span class="logo-name">
-				<img src="images/main.png">NEWS
-			</span>
-			<span class="btn-inp">
-				<input type="" placeholder="search">
-				<button>search</button>
-			</span>
+<body onload="onloadfunc()">
+	<header class="top-header-bar">
+		<div class="logo-div">News App</div>
+		<div class="inp-search-btn-div">
+			<input type="" placeholder="search">
+			<button><i class="fas fa-search"></i></button>
+		</div>
 	</header>
-	<header class="main-haader-extra">
-		<p class="title">What World Said.. What People Thoughts..</p>
-	</header>
-	<nav class="main-nav">
-
-	</nav>
-	<article class="main-content-layout">
-		<article class="main-content">
-		
-		</article>
+	<article class="layout-content">
+		<section class="content-sec">
+			<div class="news-catagories-div top-headline-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="topHeadline()">Top Headlines</span>
+				</div>
+			</div>
+			<div class="news-catagories-div showbiz-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="showbiz()">Showbiz</span>
+				</div>
+			</div>
+			<div class="news-catagories-div tech-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="technology()">Technology</span>
+				</div>
+			</div>
+			<div class="news-catagories-div animal-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="animalPLanet()">Animal Planet</span>
+				</div>
+			</div>
+			<div class="news-catagories-div politics-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="politics()">Politics</span>
+				</div>
+			</div>
+			<div class="news-catagories-div sports-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="sports()">Sports</span>
+				</div>
+			</div>
+			<div class="news-catagories-div weather-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="weather()">Weather</span>
+				</div>
+			</div>
+			<div class="news-catagories-div cooking-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="cooking()">Cooking</span>
+				</div>
+			</div>
+			<div class="news-catagories-div fitness-img">
+				<div class="news-catagories-div-layout">
+					<span class="fonts" onclick="fitness()">Fitness</span>
+				</div>
+			</div>
+			<section class="absolute-section">
+				<!-- onclick display -->
+			</section>
+			<span class="back-button" onclick="backButton()"><i class="fas fa-angle-left"></i></span>
+		</section>
 	</article>
-	<footer class="main-footer">
-		<div class="owner">
-			<h3>Owner</h3>
-			<h1><em>Talha Abbas</em></h1>
-		</div>
-		<div class="contact">
-			<h3>Github: Talhabinabbasali123456</h3>
-			<h3>Email: talhaabbas69@gmail.com</h3>
-			<h3>WhatsApp: 03242341018</h3>
-		</div>
-	</footer>
 </body>
 </html>
